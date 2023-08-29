@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(193, 185, 163);
+}
+
+main {
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Black Ops One", cursive;
+  color: rgb(218, 210, 124);
+  text-align: center;
+}
+.title h1, .title h3 {
+  padding-top: 30px;
+  margin: 0;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
+.banner {
+  background-image: url("../image/Banner_test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1000px;
+  height: 300px;
+  position: relative;
+  border: 5px solid black;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 218px;
+}
+.categories p {
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  text-align: center;
+  background: rgb(17, 64, 95);
+  color: rgb(218, 210, 124);
+  margin: 10px 10px;
+  font-family: "Silkscreen", cursive;
+  font-size: 14;
+}
+
+.main-container {
+  width: 1000px;
+  margin: 0 auto;
+  background: rgb(231, 226, 226);
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  background: rgb(193, 185, 163);
+}
+.filters p {
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  text-align: center;
+  background: rgb(17, 64, 95);
+  color: rgb(218, 210, 124);
+  margin: 10px 25px;
+  font-family: "Silkscreen", cursive;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgb(193, 185, 163);
+}
+.card-wrapper article {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background: white;
+  transition: background 330ms linear;
+}
+.card-wrapper article img {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.card-wrapper article p {
+  color: grey;
+  margin: 2px 5px;
+}
+.card-wrapper article .en-stock {
+  color: green;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Silkscreen", cursive;
+  font-size: 16px;
+}
+.card-wrapper article .hors-stock {
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Silkscreen", cursive;
+  font-size: 16px;
+}
+.card-wrapper article:hover {
+  background: rgb(193, 185, 185);
+}
+.card-wrapper article:hover p {
+  color: rgb(0, 0, 0);
+}
+
+.selected p {
+  transition: background 330ms linear;
+  transition: color 330ms linear;
+  cursor: pointer;
+}
+.selected p:hover {
+  color: rgb(205, 107, 107);
+  background: rgb(23, 105, 123);
+}
+
+footer .footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: rgb(150, 145, 145);
+  justify-content: space-evenly;
+}
+footer .footer-wrapper h2 {
+  font-family: "Black Ops One", cursive;
+  color: rgb(218, 210, 124);
+  padding-top: 30px;
+  margin: 0;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-shadow: 1px 2px 1px rgb(0, 0, 0);
+  margin: 0;
+  padding: 10px;
+}
+footer .footer-wrapper p {
+  font-family: "Silkscreen", cursive;
+}
+footer .footer-wrapper .contact-icon {
+  width: 30px;
+  height: 30px;
+}
+footer .footer-wrapper .footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 20px auto;
+}
+footer .footer-right {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto;
+}
+footer .footer-right .contact-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .footer-right .contact-flex img {
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */
